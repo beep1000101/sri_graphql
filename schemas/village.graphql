@@ -1,0 +1,6 @@
+type Village {
+    id: ID!
+    name : String!
+    leader_name: String!
+    population: Int!
+}

@@ -1,0 +1,39 @@
+type Ninja {
+    id: ID!
+    name: String!
+    nickname: String
+    age: Int!
+    rank: String!
+    kekkei_genkai: String!
+    is_cool: Boolean!
+    village_id: ID!
+}
+
+extend type Query {
+    ninja(id: ID!): Ninja
+    ninjas: [Ninja!]!
+}
+
+extend type Mutation {
+    createNinja(
+        name: String!
+        nickname: String
+        age: Int!
+        rank: String!
+        kekkei_genkai: String!
+        is_cool: Boolean!
+        village_id: ID!
+    ): Ninja!
+
+    updateNinja(
+        id: ID!
+        name: String
+        nickname: String
+        age: Int
+        rank: String
+        kekkei_genkai: String
+        is_cool: Boolean
+    ): Ninja!
+
+    deleteNinja(id: ID!): Ninja!
+}
