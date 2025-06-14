@@ -14,7 +14,7 @@ extend type Query {
     ninjas: [Ninja!]!
 }
 
-extend type Mutation {
+type Mutation {
     createNinja(
         name: String!
         nickname: String
