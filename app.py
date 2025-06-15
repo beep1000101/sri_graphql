@@ -27,17 +27,18 @@ def resolve_hello(_, info):
     return "Hello, world!"
 
 
-schema = make_executable_schema(type_defs, [query, mutation, ninja, village])
+schema = make_executable_schema(
+    type_defs, [query, mutation, ninja, village])
 
 app = Flask(__name__)
 
 
-@app.route("/graphql", methods=["GET"])
+@app.get("/graphql")
 def graphql_playground():
     return explorer_html, 200
 
 
-@app.route("/graphql", methods=["POST"])
+@app.post("/graphql")
 def graphql_server():
     data = request.get_json()
     success, result = graphql_sync(
