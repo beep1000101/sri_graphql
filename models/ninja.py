@@ -20,7 +20,7 @@ class Ninja(db.Model):
     )
     is_cool = db.Column(db.Boolean, default=False)
     village_id = db.Column(db.Integer, db.ForeignKey(
-        'village.id'), nullable=False)
+        "villages.id"), nullable=False)
     village = db.relationship('Village', backref='ninjas')
 
     def __repr__(self):
