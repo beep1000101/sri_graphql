@@ -1,0 +1,401 @@
+id,name,nickname,age,rank,kekkei_genkai,is_cool,village_id
+1,Kenji,Ash Gale,16,Jonin,None,True,5
+2,Riku,Silent Fang,33,Genin,None,True,4
+3,Masaru,Wind Whisper,39,Chunin,None,False,5
+4,Naoki,Moonlit Edge,38,Genin,None,False,1
+5,Ryuu,,41,Chunin,None,False,3
+6,Takeshi,Phantom Mist,16,Jonin,None,True,2
+7,Riku,Hidden Blade,45,Chunin,Sharingan,True,2
+8,Yuki,Shadow Walker,34,Jonin,Rinnegan,True,1
+9,Ren,Piercing Wind,18,Jonin,None,False,4
+10,Naoki,,32,Genin,None,False,5
+11,Ichiro,Stone Ghost,22,Jonin,Sharingan,True,2
+12,Kazuki,Moonlit Edge,37,Chunin,None,True,1
+13,Ichiro,Soaring Crane,31,Genin,None,True,2
+14,Toru,Storm Fang,25,Jonin,None,True,4
+15,Kaito,,24,Genin,None,True,3
+16,Daiki,Wolf Howl,20,Chunin,None,False,4
+17,Yuki,Fire Eye,17,Chunin,None,False,5
+18,Kenshin,Shadow Walker,26,Genin,None,True,5
+19,Makoto,Snow Strike,23,Jonin,None,False,1
+20,Kenshin,,30,Chunin,None,True,3
+21,Haru,Moonlit Edge,19,Genin,None,True,2
+22,Kaito,Night Flame,36,Jonin,None,True,4
+23,Kenji,Soaring Crane,35,Genin,None,True,4
+24,Kenji,Wolf Howl,38,Chunin,None,False,1
+25,Riku,,26,Genin,None,False,5
+26,Takeshi,Phantom Mist,22,Genin,Byakugan,False,5
+27,Masaru,Burning Cloud,23,Chunin,None,True,4
+28,Takeshi,Shadow Walker,44,Jonin,Byakugan,True,4
+29,Akihiro,Ash Gale,17,Genin,None,False,2
+30,Ayato,,31,Chunin,None,True,5
+31,Haruto,Blazing Star,25,Genin,None,True,3
+32,Ren,Silent Fang,25,Jonin,None,False,3
+33,Isamu,Piercing Wind,19,Chunin,None,True,1
+34,Minato,Crimson Leaf,27,Chunin,None,False,1
+35,Arata,,39,Jonin,None,True,2
+36,Minato,Iron Claw,40,Genin,Byakugan,True,2
+37,Shinji,Wolf Howl,32,Genin,None,False,3
+38,Haru,Hidden Blade,37,Jonin,None,True,5
+39,Jiro,Burning Cloud,27,Genin,None,True,5
+40,Sora,,37,Genin,None,False,4
+41,Shinji,Storm Fang,32,Genin,Byakugan,False,1
+42,Toru,Night Flame,27,Genin,None,True,4
+43,Ren,Stone Ghost,37,Genin,None,True,2
+44,Ryuu,Snow Strike,31,Jonin,Byakugan,True,4
+45,Ren,,16,Genin,None,False,5
+46,Kenji,Iron Claw,25,Genin,None,False,1
+47,Arata,Stone Ghost,21,Chunin,None,True,2
+48,Akihiro,Crimson Leaf,18,Genin,None,True,4
+49,Kenshin,Blazing Star,45,Jonin,Byakugan,True,2
+50,Rei,,29,Genin,None,False,2
+51,Rei,Storm Fang,38,Jonin,None,True,5
+52,Toru,Wind Whisper,26,Jonin,None,False,2
+53,Yuki,Burning Cloud,40,Chunin,None,True,3
+54,Haruto,Wind Whisper,16,Chunin,None,False,5
+55,Ichiro,,35,Genin,None,True,3
+56,Haru,Iron Claw,38,Genin,Sharingan,True,4
+57,Sora,Wolf Howl,44,Chunin,None,False,1
+58,Toshiro,Soaring Crane,41,Jonin,None,True,5
+59,Kenshin,Thunder Palm,41,Jonin,None,True,2
+60,Jiro,,37,Genin,None,False,5
+61,Yuki,Shadow Walker,39,Genin,None,False,5
+62,Makoto,Fire Eye,42,Chunin,None,False,5
+63,Isamu,Thunder Palm,24,Genin,Sharingan,False,4
+64,Kaito,Blazing Star,20,Jonin,None,True,5
+65,Ryuu,,32,Genin,None,True,5
+66,Makoto,Wind Whisper,44,Genin,None,False,5
+67,Ren,Burning Cloud,33,Jonin,None,True,2
+68,Daiki,Burning Cloud,29,Jonin,None,False,1
+69,Riku,Crimson Leaf,35,Chunin,None,False,3
+70,Isamu,,43,Genin,None,True,2
+71,Toru,Thunder Palm,42,Jonin,None,False,4
+72,Toru,Crimson Leaf,30,Jonin,None,False,2
+73,Souta,Phantom Mist,35,Genin,None,True,4
+74,Souta,Shadow Walker,18,Genin,None,True,4
+75,Rei,,34,Chunin,None,True,1
+76,Kenshin,Burning Cloud,29,Chunin,None,True,3
+77,Haru,Blazing Star,24,Genin,Sharingan,True,2
+78,Shinji,Hidden Blade,30,Genin,None,False,4
+79,Kenji,Stone Ghost,18,Chunin,None,False,4
+80,Sora,,37,Genin,None,True,1
+81,Sora,Silent Fang,45,Genin,None,True,1
+82,Kazuki,Blazing Star,23,Chunin,Sharingan,False,4
+83,Kenshin,Shadow Walker,24,Jonin,None,False,4
+84,Haruto,Blazing Star,26,Genin,Byakugan,True,5
+85,Akihiro,,39,Genin,Sharingan,False,3
+86,Ichiro,Hidden Blade,36,Genin,Sharingan,False,4
+87,Riku,Snow Strike,34,Genin,Byakugan,False,4
+88,Hikaru,Ash Gale,22,Genin,Sharingan,False,4
+89,Souta,Stone Ghost,36,Genin,None,False,4
+90,Ren,,45,Genin,Sharingan,False,4
+91,Kazuki,Thunder Palm,29,Genin,None,True,1
+92,Masaru,Ash Gale,42,Genin,None,False,4
+93,Toshiro,Stone Ghost,37,Genin,None,False,2
+94,Ichiro,Burning Cloud,36,Chunin,None,True,4
+95,Hajime,,33,Chunin,None,True,1
+96,Makoto,Wind Whisper,30,Jonin,Rinnegan,True,4
+97,Kaito,Storm Fang,28,Genin,Byakugan,False,5
+98,Rei,Soaring Crane,33,Chunin,Sharingan,True,5
+99,Takumi,Phantom Mist,36,Genin,Rinnegan,True,3
+100,Naoki,,35,Jonin,None,True,5
+101,Akihiro,Hidden Blade,45,Genin,None,True,4
+102,Takumi,Stone Ghost,26,Chunin,None,False,2
+103,Toru,Fire Eye,40,Jonin,None,True,2
+104,Kenji,Wolf Howl,30,Genin,None,True,2
+105,Kenshin,,22,Genin,None,False,1
+106,Jiro,Snow Strike,34,Genin,None,False,5
+107,Akihiro,Shadow Walker,25,Chunin,None,False,3
+108,Rei,Crimson Leaf,37,Genin,Sharingan,False,5
+109,Jiro,Wolf Howl,28,Jonin,None,True,3
+110,Toshiro,,37,Jonin,Sharingan,False,5
+111,Haruto,Snow Strike,41,Chunin,None,True,5
+112,Toshiro,Stone Ghost,28,Chunin,None,False,2
+113,Kenshin,Wind Whisper,25,Jonin,None,False,4
+114,Rei,Blazing Star,32,Chunin,None,False,3
+115,Naoki,,37,Jonin,None,False,3
+116,Kenshin,Crimson Leaf,43,Chunin,None,True,3
+117,Minato,Phantom Mist,39,Genin,None,True,2
+118,Toshiro,Shadow Walker,25,Chunin,None,True,2
+119,Haruto,Wolf Howl,34,Jonin,None,True,1
+120,Kenji,,25,Genin,Sharingan,False,5
+121,Takeshi,Iron Claw,34,Jonin,None,False,2
+122,Haru,Wind Whisper,31,Genin,None,True,1
+123,Rei,Storm Fang,42,Genin,Byakugan,True,1
+124,Ichiro,Hidden Blade,31,Genin,Sharingan,True,4
+125,Sora,,26,Genin,Byakugan,False,1
+126,Ichiro,Fire Eye,30,Genin,None,True,2
+127,Kenji,Shadow Walker,17,Chunin,Byakugan,True,4
+128,Naoki,Blazing Star,25,Genin,None,True,5
+129,Ayato,Wind Whisper,34,Jonin,Sharingan,True,4
+130,Jiro,,17,Genin,None,False,4
+131,Arata,Night Flame,38,Chunin,Sharingan,True,4
+132,Naoki,Soaring Crane,34,Genin,Sharingan,True,1
+133,Minato,Wolf Howl,19,Chunin,None,True,1
+134,Ryuu,Thunder Palm,17,Genin,None,False,2
+135,Yuki,,34,Genin,Sharingan,True,1
+136,Arata,Night Flame,34,Genin,None,False,1
+137,Kenshin,Phantom Mist,37,Genin,None,True,2
+138,Shinji,Fire Eye,39,Genin,None,True,3
+139,Sora,Wolf Howl,22,Genin,Sharingan,False,1
+140,Takeshi,,26,Chunin,Byakugan,False,2
+141,Toshiro,Ash Gale,30,Genin,Byakugan,False,1
+142,Riku,Moonlit Edge,39,Chunin,None,False,2
+143,Kenshin,Moonlit Edge,41,Chunin,None,False,5
+144,Toshiro,Fire Eye,39,Chunin,None,False,2
+145,Naoki,,41,Chunin,Byakugan,True,2
+146,Hikaru,Wolf Howl,25,Genin,Sharingan,True,3
+147,Toshiro,Snow Strike,42,Chunin,None,True,2
+148,Jiro,Fire Eye,20,Genin,None,True,4
+149,Arata,Shadow Walker,29,Chunin,None,True,5
+150,Makoto,,28,Chunin,None,True,5
+151,Haru,Hidden Blade,38,Chunin,None,True,3
+152,Toshiro,Silent Fang,23,Genin,None,False,3
+153,Haruto,Thunder Palm,24,Genin,None,False,4
+154,Shinji,Wind Whisper,40,Genin,None,False,1
+155,Takeshi,,39,Genin,None,True,3
+156,Ayato,Blazing Star,29,Genin,Byakugan,True,2
+157,Naoki,Wind Whisper,29,Genin,None,False,5
+158,Hajime,Iron Claw,30,Chunin,None,False,1
+159,Toru,Piercing Wind,18,Chunin,None,False,1
+160,Makoto,,37,Genin,Byakugan,True,5
+161,Yuki,Iron Claw,18,Chunin,Rinnegan,False,3
+162,Makoto,Crimson Leaf,18,Genin,None,False,2
+163,Kenshin,Wind Whisper,34,Genin,None,True,1
+164,Takumi,Fire Eye,26,Genin,None,True,4
+165,Kazuki,,44,Genin,None,True,2
+166,Riku,Shadow Walker,29,Jonin,None,False,1
+167,Takeshi,Blazing Star,22,Chunin,None,True,3
+168,Jiro,Fire Eye,23,Jonin,None,True,3
+169,Jiro,Crimson Leaf,19,Genin,None,True,3
+170,Masaru,,41,Genin,None,False,4
+171,Kaito,Hidden Blade,17,Genin,None,False,5
+172,Yuki,Storm Fang,24,Chunin,Byakugan,False,4
+173,Shiro,Piercing Wind,23,Chunin,None,True,1
+174,Haruto,Night Flame,39,Genin,Byakugan,True,5
+175,Shiro,,34,Chunin,None,True,5
+176,Ren,Phantom Mist,40,Genin,None,False,1
+177,Yuki,Piercing Wind,23,Genin,Byakugan,True,4
+178,Yuki,Crimson Leaf,38,Chunin,None,True,4
+179,Naoki,Piercing Wind,16,Jonin,None,False,1
+180,Rei,,44,Jonin,None,False,4
+181,Souta,Wind Whisper,23,Genin,None,True,5
+182,Arata,Moonlit Edge,22,Chunin,None,False,2
+183,Ayato,Ash Gale,39,Chunin,Byakugan,True,5
+184,Makoto,Fire Eye,25,Genin,None,True,2
+185,Hajime,,31,Jonin,None,True,1
+186,Rei,Piercing Wind,41,Genin,None,False,4
+187,Akihiro,Wind Whisper,35,Genin,None,False,1
+188,Makoto,Phantom Mist,37,Genin,None,True,4
+189,Kenji,Blazing Star,22,Jonin,Sharingan,True,1
+190,Kazuki,,38,Jonin,None,False,1
+191,Souta,Blazing Star,37,Chunin,None,False,2
+192,Masaru,Blazing Star,35,Genin,None,True,1
+193,Ichiro,Snow Strike,21,Genin,None,True,3
+194,Takumi,Night Flame,36,Chunin,None,False,4
+195,Ren,,27,Genin,None,False,1
+196,Kenshin,Iron Claw,27,Chunin,None,True,4
+197,Shinji,Burning Cloud,33,Chunin,Sharingan,True,1
+198,Ryuu,Moonlit Edge,38,Genin,Sharingan,False,1
+199,Ryuu,Soaring Crane,36,Genin,Sharingan,False,4
+200,Ichiro,,31,Chunin,Byakugan,False,1
+201,Shinji,Shadow Walker,27,Chunin,None,False,2
+202,Kenji,Ash Gale,23,Jonin,None,False,2
+203,Daiki,Burning Cloud,36,Chunin,None,True,2
+204,Riku,Crimson Leaf,44,Genin,Byakugan,False,2
+205,Akihiro,,37,Genin,None,True,3
+206,Jiro,Snow Strike,39,Chunin,Sharingan,False,3
+207,Hikaru,Blazing Star,19,Chunin,None,True,4
+208,Souta,Iron Claw,35,Chunin,None,False,4
+209,Daiki,Soaring Crane,38,Genin,None,True,5
+210,Ryuu,,23,Chunin,None,False,3
+211,Toru,Soaring Crane,16,Genin,Sharingan,False,2
+212,Naoki,Storm Fang,45,Jonin,None,True,1
+213,Naoki,Burning Cloud,36,Chunin,None,False,2
+214,Kaito,Iron Claw,23,Genin,None,False,4
+215,Shinji,,18,Jonin,None,True,1
+216,Ren,Phantom Mist,35,Jonin,None,True,5
+217,Shinji,Iron Claw,25,Jonin,None,True,2
+218,Takeshi,Fire Eye,34,Chunin,Byakugan,False,5
+219,Haruto,Soaring Crane,27,Chunin,None,False,3
+220,Shinji,,42,Jonin,None,False,3
+221,Kenshin,Shadow Walker,24,Jonin,Sharingan,True,1
+222,Hajime,Silent Fang,21,Genin,None,True,3
+223,Toru,Soaring Crane,31,Genin,None,False,4
+224,Shinji,Wolf Howl,24,Jonin,None,False,5
+225,Souta,,44,Chunin,None,False,5
+226,Hikaru,Phantom Mist,25,Chunin,None,True,5
+227,Kenji,Piercing Wind,43,Chunin,None,True,1
+228,Toru,Blazing Star,44,Genin,None,False,1
+229,Naoki,Phantom Mist,41,Genin,Byakugan,True,3
+230,Riku,,33,Genin,None,True,1
+231,Masaru,Shadow Walker,16,Genin,None,True,3
+232,Jiro,Silent Fang,28,Genin,None,True,4
+233,Takeshi,Storm Fang,24,Genin,None,False,2
+234,Ren,Wind Whisper,27,Genin,None,False,3
+235,Arata,,16,Genin,None,False,4
+236,Hikaru,Hidden Blade,31,Chunin,None,False,1
+237,Ren,Thunder Palm,35,Genin,None,True,4
+238,Hikaru,Snow Strike,33,Genin,Sharingan,False,5
+239,Haru,Wolf Howl,27,Chunin,Byakugan,True,3
+240,Hajime,,31,Jonin,None,False,4
+241,Kazuki,Soaring Crane,39,Jonin,None,True,1
+242,Akihiro,Stone Ghost,41,Genin,None,True,1
+243,Jiro,Blazing Star,32,Jonin,None,False,4
+244,Hajime,Piercing Wind,20,Jonin,None,True,4
+245,Toshiro,,29,Genin,None,True,2
+246,Shiro,Burning Cloud,30,Genin,None,False,1
+247,Kenji,Phantom Mist,44,Genin,Rinnegan,False,2
+248,Naoki,Iron Claw,23,Genin,None,False,5
+249,Shinji,Thunder Palm,23,Genin,None,False,3
+250,Shiro,,22,Chunin,None,True,5
+251,Masaru,Storm Fang,35,Chunin,None,True,4
+252,Takeshi,Stone Ghost,27,Genin,Sharingan,True,1
+253,Rei,Wind Whisper,20,Genin,Rinnegan,True,4
+254,Ryuu,Thunder Palm,35,Genin,Byakugan,False,2
+255,Arata,,38,Genin,None,False,5
+256,Sora,Wind Whisper,30,Chunin,None,False,3
+257,Ryuu,Thunder Palm,39,Chunin,None,True,1
+258,Minato,Snow Strike,26,Genin,None,True,2
+259,Toru,Wolf Howl,19,Chunin,Byakugan,True,1
+260,Haruto,,28,Genin,None,False,5
+261,Sora,Soaring Crane,20,Chunin,None,True,3
+262,Makoto,Fire Eye,25,Jonin,Sharingan,False,3
+263,Toru,Moonlit Edge,16,Chunin,None,False,1
+264,Yuki,Wind Whisper,40,Genin,None,True,3
+265,Sora,,40,Genin,None,True,2
+266,Jiro,Blazing Star,33,Jonin,None,False,5
+267,Shiro,Fire Eye,44,Genin,None,True,4
+268,Kaito,Moonlit Edge,34,Genin,Sharingan,False,5
+269,Kazuki,Ash Gale,45,Genin,None,False,4
+270,Akihiro,,16,Genin,None,False,3
+271,Sora,Hidden Blade,28,Chunin,None,False,5
+272,Riku,Piercing Wind,27,Genin,Byakugan,False,3
+273,Shinji,Wind Whisper,42,Chunin,Rinnegan,False,5
+274,Haruto,Piercing Wind,20,Genin,None,True,1
+275,Souta,,30,Chunin,None,False,2
+276,Takeshi,Piercing Wind,34,Genin,None,False,1
+277,Kazuki,Crimson Leaf,27,Chunin,None,False,3
+278,Haruto,Snow Strike,27,Genin,Byakugan,False,5
+279,Sora,Wind Whisper,34,Chunin,None,True,4
+280,Ichiro,,18,Genin,None,False,4
+281,Sora,Thunder Palm,23,Chunin,None,False,5
+282,Haru,Ash Gale,18,Genin,None,True,4
+283,Daiki,Iron Claw,39,Chunin,None,True,5
+284,Masaru,Phantom Mist,39,Genin,None,True,2
+285,Kazuki,,43,Jonin,None,False,1
+286,Souta,Storm Fang,43,Jonin,None,False,4
+287,Isamu,Fire Eye,45,Genin,None,False,1
+288,Akihiro,Fire Eye,40,Jonin,None,False,3
+289,Hikaru,Night Flame,29,Chunin,None,True,3
+290,Hajime,,19,Chunin,Sharingan,False,2
+291,Riku,Storm Fang,36,Chunin,None,True,1
+292,Masaru,Wind Whisper,39,Genin,None,False,1
+293,Rei,Fire Eye,32,Genin,None,True,4
+294,Haruto,Wolf Howl,17,Genin,None,False,2
+295,Takumi,,41,Jonin,None,False,2
+296,Masaru,Hidden Blade,39,Chunin,None,True,2
+297,Toru,Snow Strike,45,Jonin,None,True,3
+298,Arata,Thunder Palm,20,Genin,Sharingan,True,3
+299,Haru,Soaring Crane,44,Genin,None,False,1
+300,Kazuki,,27,Chunin,None,True,1
+301,Naoki,Iron Claw,16,Genin,Byakugan,True,5
+302,Haruto,Night Flame,40,Genin,Sharingan,False,3
+303,Makoto,Shadow Walker,31,Genin,None,True,5
+304,Makoto,Crimson Leaf,39,Genin,Byakugan,True,1
+305,Minato,,24,Genin,None,True,2
+306,Kaito,Storm Fang,25,Jonin,Sharingan,True,1
+307,Haru,Moonlit Edge,21,Genin,None,False,5
+308,Isamu,Night Flame,39,Chunin,Byakugan,True,1
+309,Kenshin,Hidden Blade,35,Genin,None,False,5
+310,Ren,,27,Chunin,None,False,4
+311,Ryuu,Piercing Wind,33,Jonin,None,False,4
+312,Kenshin,Night Flame,31,Genin,Sharingan,False,1
+313,Shinji,Burning Cloud,24,Genin,None,False,5
+314,Toshiro,Phantom Mist,40,Jonin,Sharingan,True,1
+315,Kaito,,34,Genin,None,False,2
+316,Yuki,Silent Fang,41,Genin,None,False,4
+317,Shinji,Hidden Blade,22,Jonin,None,False,4
+318,Hajime,Wind Whisper,45,Chunin,None,False,1
+319,Akihiro,Blazing Star,23,Genin,None,True,5
+320,Yuki,,37,Chunin,Sharingan,True,2
+321,Riku,Stone Ghost,22,Chunin,Sharingan,True,2
+322,Ren,Night Flame,27,Genin,None,False,5
+323,Kenshin,Crimson Leaf,37,Genin,None,False,2
+324,Kazuki,Moonlit Edge,23,Chunin,None,True,5
+325,Kaito,,29,Genin,Byakugan,False,5
+326,Kenji,Hidden Blade,44,Jonin,None,True,2
+327,Isamu,Ash Gale,28,Genin,None,False,3
+328,Hikaru,Night Flame,17,Chunin,None,True,1
+329,Arata,Silent Fang,40,Chunin,None,True,1
+330,Kaito,,29,Jonin,None,True,4
+331,Isamu,Wolf Howl,33,Genin,Byakugan,False,2
+332,Naoki,Soaring Crane,17,Genin,None,True,5
+333,Minato,Hidden Blade,33,Genin,None,False,1
+334,Takeshi,Fire Eye,44,Chunin,None,False,1
+335,Toshiro,,37,Genin,None,False,2
+336,Shiro,Soaring Crane,29,Chunin,None,False,4
+337,Kenshin,Blazing Star,26,Genin,None,False,5
+338,Ichiro,Moonlit Edge,36,Genin,None,True,3
+339,Ichiro,Shadow Walker,30,Genin,None,False,4
+340,Ren,,26,Genin,None,True,1
+341,Toshiro,Burning Cloud,41,Genin,None,False,2
+342,Naoki,Stone Ghost,22,Genin,None,False,1
+343,Ayato,Thunder Palm,30,Genin,Rinnegan,True,2
+344,Hajime,Hidden Blade,29,Chunin,Byakugan,True,4
+345,Daiki,,34,Genin,None,True,5
+346,Minato,Storm Fang,38,Genin,None,True,4
+347,Sora,Burning Cloud,36,Jonin,None,True,1
+348,Kazuki,Ash Gale,24,Genin,None,False,2
+349,Hikaru,Piercing Wind,30,Jonin,Byakugan,True,2
+350,Kenshin,,34,Genin,Rinnegan,False,2
+351,Minato,Burning Cloud,27,Genin,None,False,1
+352,Ren,Wind Whisper,39,Genin,Byakugan,False,2
+353,Takumi,Shadow Walker,25,Jonin,None,False,1
+354,Toru,Fire Eye,22,Genin,Sharingan,False,4
+355,Hajime,,31,Jonin,Sharingan,True,4
+356,Shiro,Wolf Howl,39,Genin,None,False,4
+357,Toshiro,Stone Ghost,22,Chunin,None,False,4
+358,Ryuu,Hidden Blade,30,Genin,None,False,1
+359,Daiki,Thunder Palm,41,Genin,None,True,5
+360,Takumi,,31,Chunin,None,False,4
+361,Jiro,Iron Claw,31,Genin,None,True,3
+362,Toru,Blazing Star,18,Genin,None,True,4
+363,Akihiro,Soaring Crane,19,Genin,None,True,2
+364,Kazuki,Fire Eye,30,Genin,None,True,4
+365,Haru,,37,Genin,None,True,2
+366,Kaito,Burning Cloud,16,Genin,None,False,3
+367,Riku,Shadow Walker,40,Chunin,Byakugan,False,1
+368,Kaito,Wolf Howl,31,Genin,None,False,2
+369,Kazuki,Thunder Palm,41,Jonin,None,True,1
+370,Ryuu,,17,Genin,None,False,3
+371,Arata,Blazing Star,19,Chunin,None,True,2
+372,Makoto,Wind Whisper,36,Jonin,None,False,3
+373,Arata,Silent Fang,35,Genin,None,False,5
+374,Ryuu,Soaring Crane,25,Genin,Byakugan,True,3
+375,Isamu,,29,Genin,None,True,3
+376,Ichiro,Wind Whisper,16,Jonin,None,False,4
+377,Ryuu,Stone Ghost,22,Chunin,Sharingan,False,1
+378,Rei,Wolf Howl,44,Genin,None,True,1
+379,Shiro,Moonlit Edge,17,Genin,None,False,1
+380,Hajime,,40,Genin,None,True,1
+381,Minato,Soaring Crane,44,Genin,None,True,4
+382,Kenji,Moonlit Edge,31,Genin,None,True,1
+383,Rei,Iron Claw,18,Chunin,None,False,1
+384,Ichiro,Snow Strike,45,Jonin,None,False,2
+385,Souta,,21,Chunin,None,True,2
+386,Takumi,Storm Fang,44,Genin,None,False,2
+387,Shiro,Storm Fang,29,Genin,None,True,5
+388,Souta,Storm Fang,44,Genin,None,False,1
+389,Kenshin,Stone Ghost,32,Genin,None,False,4
+390,Riku,,17,Genin,None,True,5
+391,Toshiro,Moonlit Edge,42,Genin,None,True,5
+392,Toru,Hidden Blade,19,Genin,None,True,1
+393,Toshiro,Moonlit Edge,32,Genin,Sharingan,True,4
+394,Ayato,Blazing Star,27,Genin,None,True,5
+395,Hikaru,,45,Chunin,None,False,4
+396,Hikaru,Piercing Wind,34,Genin,None,True,1
+397,Sora,Hidden Blade,26,Jonin,Byakugan,False,4
+398,Hikaru,Stone Ghost,29,Genin,None,False,1
+399,Ichiro,Soaring Crane,27,Chunin,None,True,3
+400,Riku,,17,Genin,None,False,2
