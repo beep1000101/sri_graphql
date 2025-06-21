@@ -32,6 +32,12 @@ def seed_data_from_csvs(session=None):
     """
     ninjas_df = pd.read_csv(DATA_PATH / 'ninjas.csv', index_col=0)
     ninjas_df = ninjas_df.fillna('')
+    ninjas_df['kekkei_genkai'] = (
+        ninjas_df['kekkei_genkai']
+        .str
+        .strip()
+        .replace('', 'None')
+    )
     villages_df = pd.read_csv(DATA_PATH / 'villages.csv', index_col=0)
     ninjas = [Ninja(**row.to_dict()) for _, row in ninjas_df.iterrows()]
     villages = [Village(**row.to_dict()) for _, row in villages_df.iterrows()]

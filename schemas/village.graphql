@@ -3,4 +3,27 @@ type Village {
     name : String!
     leader_name: String!
     population: Int!
+    ninjas: [Ninja!]!
+}
+
+extend type Query {
+    village(id: ID!): Village
+    villages: [Village!]!
+}
+
+extend type Mutation {
+    createVillage(
+        name: String!
+        leader_name: String!
+        population: Int!
+    ): Village!
+
+    updateVillage(
+        id: ID!
+        name: String
+        leader_name: String
+        population: Int
+    ): Village!
+
+    deleteVillage(id: ID!): Village!
 }

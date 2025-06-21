@@ -7,6 +7,7 @@ type Ninja {
     kekkei_genkai: String!
     is_cool: Boolean!
     village_id: ID!
+    village: Village!
 }
 
 extend type Query {
