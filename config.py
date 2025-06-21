@@ -42,7 +42,7 @@ class DevelopmentConfig(BaseConfig):
         The URI for the SQLite database.
     """
     debug = True
-    DB_NAME = os.getenv('DB_NAME', 'mydb')
+    DB_NAME = os.getenv('DB_NAME', 'GraphQL.db')
     SQLALCHEMY_DATABASE_URI = f"sqlite:///{basedir / DB_NAME}"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
