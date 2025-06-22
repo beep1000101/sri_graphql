@@ -26,6 +26,7 @@ def create_app(config_name):
     # import error handlers
     # from flask_app.routes.errors import register_error_handlers
     from graphql_api.base import graphql_base_blueprint
+    from graphql_api.examples import examples_blueprint
     app = Flask(__name__)
     app.config.from_object(config_name)
 
@@ -33,6 +34,7 @@ def create_app(config_name):
 
     # register the routes
     app.register_blueprint(graphql_base_blueprint)
+    app.register_blueprint(examples_blueprint)
     # register the error handlers
     # register_error_handlers(app=app)
 
