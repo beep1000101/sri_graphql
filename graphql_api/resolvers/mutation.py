@@ -85,3 +85,37 @@ def resolve_delete_ninja(_, info, id: int):
     db.session.delete(ninja)
     db.session.commit()
     return True
+
+
+@mutation.field("createVillage")
+@catch_db_errors
+def resolve_create_village(_, info, name: str):
+    village = Village(name=name)
+    db.session.add(village)
+    db.session.commit()
+    return village
+
+
+@mutation.field("updateVillage")
+@catch_db_errors
+@require_positive_id(arg_name="id")
+def resolve_update_village(_, info, id: int, name: Optional[str] = None):
+    village = db.session.query(Village).get(id)
+    if not village:
+        raise APIError("Village not found", code="NOT_FOUND", status_code=404)
+    if name is not None:
+        village.name = name
+    db.session.commit()
+    return village
+
+
+@mutation.field("deleteVillage")
+@catch_db_errors
+@require_positive_id(arg_name="id")
+def resolve_delete_village(_, info, id: int):
+    village = Village.query.get(id)
+    if not village:
+        raise APIError("Village not found", code="NOT_FOUND", status_code=404)
+    db.session.delete(village)
+    db.session.commit()
+    return True

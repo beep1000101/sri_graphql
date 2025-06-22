@@ -1,5 +1,5 @@
 from sqlalchemy import Integer, String, CheckConstraint
-from sqlalchemy.orm import Mapped, mapped_column, validates
+from sqlalchemy.orm import Mapped, mapped_column, validates, relationship
 
 from database.models.base import Base
 
@@ -15,6 +15,10 @@ class Village(Base):
     name: Mapped[str] = mapped_column(String(50), nullable=False)
     leader_name: Mapped[str] = mapped_column(String(50), nullable=False)
     population: Mapped[int] = mapped_column(Integer, nullable=False)
+    ninjas = relationship(
+        "Ninja",
+        back_populates="village",
+    )
 
     def __repr__(self):
         return f'<Village {self.name}>'

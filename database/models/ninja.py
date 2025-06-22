@@ -28,13 +28,18 @@ class Ninja(Base):
         default=KekkeiGenkai.NONE
     )
     is_cool: Mapped[bool] = mapped_column(Boolean, default=False)
-    village_id: Mapped[int] = mapped_column(
+
+    village_id: Mapped[int | None] = mapped_column(
         Integer,
-        ForeignKey("villages.id"),
-        nullable=False
+        ForeignKey("villages.id", ondelete="SET NULL"),
+        nullable=True,
     )
 
-    village: Mapped[Village] = relationship('Village', backref='ninjas')
+    village: Mapped["Village"] = relationship(
+        "Village",
+        back_populates="ninjas",
+        passive_deletes=True,
+    )
 
     def __repr__(self):
         return f'<Ninja {self.name}>'
@@ -50,24 +55,6 @@ class Ninja(Base):
             raise ValueError("ID must be an integer.")
         except ValueError as e:
             raise e
-
-    # @validates('name')
-    # def validate_name(self, key, value):
-    #     try:
-    #         if not isinstance(value, str) or not value.strip():
-    #             raise ValueError("Name must be a non-empty string.")
-    #         return value.strip()
-    #     except ValueError as e:
-    #         raise e
-
-    # @validates('nickname')
-    # def validate_nickname(self, key, value):
-    #     if value is not None:
-    #         if not isinstance(value, str) or not value.strip():
-    #             raise ValueError(
-    #                 "Nickname must be a non-empty string or None.")
-    #         return value.strip()
-    #     return None
 
     @validates('age')
     def validate_age(self, key, value):
