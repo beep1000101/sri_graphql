@@ -1,20 +1,14 @@
 FROM python:3.13-slim
 
-# Set work directory
 WORKDIR /app
 
-
-# Install Python dependencies
 COPY requirements.txt .
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy project files
 COPY . .
-# RUN chmod -R a+rX /app
+RUN chmod +x start.sh
 
-# Expose port (adjust if needed)
 EXPOSE 5000
 
-# run flask app
-CMD ["flask", "run", "--host=0.0.0.0"]
+ENTRYPOINT ["./start.sh"]
 
