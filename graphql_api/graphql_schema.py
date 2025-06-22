@@ -10,7 +10,7 @@ from graphql_api.resolvers.query import query
 from graphql_api.resolvers.mutation import mutation
 
 root_path = Path(__file__).parents[1]
-schema_path = root_path / "schemas"
+schema_path = root_path / "graphql"
 type_defs = load_schema_from_path(schema_path)
 
 ninja = ObjectType("Ninja")
