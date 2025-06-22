@@ -1,0 +1,12 @@
+mutation {
+  createVillage(
+    name: "Hidden Rain"
+    leader_name: "Konan"
+    population: 5000
+  ) {
+    id
+    name
+    leader_name
+    population
+  }
+}

@@ -1,30 +1,4 @@
-mutation {
-  createVillage(
-    name: "Hidden Rain"
-    leader_name: "Konan"
-    population: 5000
-  ) {
-    id
-    name
-    leader_name
-    population
-  }
-}
 
-mutation {
-  updateVillage(
-    id: 1
-    name: "Hidden Leaf Updated"
-    leader_name: "Naruto Uzumaki"
-    population: 15500
-  ) {
-    id
-    name
-    leader_name
-    population
-  }
-}
 
-mutation {
-  deleteVillage(id: 1)
-}
+
+
