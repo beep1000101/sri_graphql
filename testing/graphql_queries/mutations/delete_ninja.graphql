@@ -1,0 +1,3 @@
+mutation {
+  deleteNinja(id: 1)
+}

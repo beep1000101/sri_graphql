@@ -1,0 +1,20 @@
+mutation {
+  createNinja(
+    name: "Shin"
+    age: 21
+    village_id: 2
+    rank: "Genin"
+    kekkei_genkai: "None"
+    is_cool: true
+    nickname: "Shadow"
+  ) {
+    id
+    name
+    nickname
+    age
+    rank
+    kekkei_genkai
+    is_cool
+    village_id
+  }
+}

@@ -1,0 +1,19 @@
+mutation {
+  updateNinja(
+    id: 1
+    name: "Kenji Updated"
+    nickname: "Ash Gale"
+    age: 17
+    rank: "Jonin"
+    kekkei_genkai: "Sharingan"
+    is_cool: false
+  ) {
+    id
+    name
+    nickname
+    age
+    rank
+    kekkei_genkai
+    is_cool
+  }
+}

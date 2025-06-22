@@ -1,0 +1,13 @@
+mutation {
+  assignNinjaToVillage(
+    villageId: 2
+    ninjaId: 1
+  ) {
+    id
+    name
+    ninjas {
+      id
+      name
+    }
+  }
+}
