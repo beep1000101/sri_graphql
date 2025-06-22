@@ -6,6 +6,7 @@ import pandas as pd
 from database.models.base import Base
 from database.models.ninja import Ninja
 from database.models.village import Village
+from database.models.enums import KekkeiGenkai, NinjaRank
 
 from database.database_init import get_engine_and_session
 
@@ -31,13 +32,20 @@ def seed_data_from_csvs(session=None):
     Seed the database with data from CSV files.
     """
     ninjas_df = pd.read_csv(DATA_PATH / 'ninjas.csv', index_col=0)
-    ninjas_df = ninjas_df.fillna('')
+    # cast kekkei_genkai to KekkeiGenkai enum
     ninjas_df['kekkei_genkai'] = (
         ninjas_df['kekkei_genkai']
-        .str
-        .strip()
-        .replace('', 'None')
+        .fillna(KekkeiGenkai.NONE)
+        .map(KekkeiGenkai)
     )
+    # cast rank to NinjaRank enum
+    ninjas_df['rank'] = (
+        ninjas_df['rank']
+        .fillna(NinjaRank.GENIN)
+        .map(NinjaRank)
+    )
+    ninjas_df = ninjas_df.fillna('')
+
     villages_df = pd.read_csv(DATA_PATH / 'villages.csv', index_col=0)
     ninjas = [Ninja(**row.to_dict()) for _, row in ninjas_df.iterrows()]
     villages = [Village(**row.to_dict()) for _, row in villages_df.iterrows()]

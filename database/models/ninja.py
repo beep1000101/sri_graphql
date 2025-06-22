@@ -105,10 +105,18 @@ class Ninja(Base):
         except ValueError as e:
             raise e
 
-    @validates('name', 'nickname')
-    def validate_string_fields(self, key, value):
+    @validates('name')
+    def validate_name_fields(self, key, value):
         if not isinstance(value, str) or not value.strip():
             raise ValueError(f"{key} must be a non-empty string.")
+        if len(value) > self.__STRING_LENGTH:
+            raise ValueError(f"{key} cannot exceed 50 characters.")
+        return value.strip() if value else value
+
+    @validates('nickname')
+    def validate_nickname_fields(self, key, value):
+        if not isinstance(value, str):
+            raise ValueError(f"{key} must be a string.")
         if len(value) > self.__STRING_LENGTH:
             raise ValueError(f"{key} cannot exceed 50 characters.")
         return value.strip() if value else value
