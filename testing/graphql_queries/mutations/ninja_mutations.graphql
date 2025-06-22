@@ -1,0 +1,58 @@
+mutation {
+  createNinja(
+    name: "Shin"
+    age: 21
+    village_id: 2
+    rank: "Genin"
+    kekkei_genkai: "None"
+    is_cool: true
+    nickname: "Shadow"
+  ) {
+    id
+    name
+    nickname
+    age
+    rank
+    kekkei_genkai
+    is_cool
+    village_id
+  }
+}
+
+mutation {
+  updateNinja(
+    id: 1
+    name: "Kenji Updated"
+    nickname: "Ash Gale"
+    age: 17
+    rank: "Jonin"
+    kekkei_genkai: "Sharingan"
+    is_cool: false
+  ) {
+    id
+    name
+    nickname
+    age
+    rank
+    kekkei_genkai
+    is_cool
+  }
+}
+
+mutation {
+  deleteNinja(id: 1)
+}
+
+mutation {
+  assignNinjaToVillage(
+    villageId: 2
+    ninjaId: 1
+  ) {
+    id
+    name
+    ninjas {
+      id
+      name
+    }
+  }
+}
