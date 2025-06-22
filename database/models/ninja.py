@@ -96,6 +96,8 @@ class Ninja(Base):
 
     @validates('village_id')
     def validate_village_id(self, key, value):
+        if value is None:
+            return None
         try:
             if value < 0:
                 raise ValueError("Village ID must be a non-negative integer.")

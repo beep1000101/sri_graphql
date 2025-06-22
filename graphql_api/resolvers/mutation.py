@@ -71,13 +71,15 @@ def resolve_update_ninja(_, info, id: int, **kwargs):
 
 @mutation.field("assignNinjaToVillage")
 @catch_db_errors
-@require_positive_id(arg_name="ninja_id")
-def resolve_assign_ninja_to_village(_, info, ninja_id: int, village_id: int):
+@require_positive_id(arg_name="ninjaId")
+def resolve_assign_ninja_to_village(_, info, ninjaId: int, villageId: int):
+    ninja_id = ninjaId
+    village_id = villageId
     ninja = db.session.query(Ninja).get(ninja_id)
     if not ninja:
         raise APIError("Ninja not found", code="NOT_FOUND", status_code=404)
 
-    village = Village.query.get(village_id)
+    village = db.session.query(Village).get(village_id)
     if not village:
         raise APIError("Village not found", code="NOT_FOUND", status_code=404)
 
@@ -91,15 +93,21 @@ def resolve_assign_ninja_to_village(_, info, ninja_id: int, village_id: int):
 @require_positive_id(arg_name="id")
 def resolve_delete_ninja(_, info, id: int):
     ninja = db.session.query(Ninja).get(id)
+    if ninja is None:
+        raise APIError("Ninja not found", code="NOT_FOUND", status_code=404)
     db.session.delete(ninja)
     db.session.commit()
-    return True
+    return ninja
 
 
 @mutation.field("createVillage")
 @catch_db_errors
-def resolve_create_village(_, info, name: str):
-    village = Village(name=name)
+def resolve_create_village(_, info, name: str, leader_name: str, population: int):
+    village = Village(
+        name=name,
+        leader_name=leader_name,
+        population=population
+    )
     db.session.add(village)
     db.session.commit()
     return village
@@ -108,12 +116,18 @@ def resolve_create_village(_, info, name: str):
 @mutation.field("updateVillage")
 @catch_db_errors
 @require_positive_id(arg_name="id")
-def resolve_update_village(_, info, id: int, name: Optional[str] = None):
+def resolve_update_village(_, info, id: int, name: Optional[str] = None, leader_name: Optional[str] = None, population: Optional[int] = None):
     village = db.session.query(Village).get(id)
     if not village:
         raise APIError("Village not found", code="NOT_FOUND", status_code=404)
-    if name is not None:
-        village.name = name
+    village_attributes = {
+        "name": name,
+        "leader_name": leader_name,
+        "population": population
+    }
+    for attr, value in village_attributes.items():
+        if value is not None:
+            setattr(village, attr, value)
     db.session.commit()
     return village
 
@@ -122,9 +136,9 @@ def resolve_update_village(_, info, id: int, name: Optional[str] = None):
 @catch_db_errors
 @require_positive_id(arg_name="id")
 def resolve_delete_village(_, info, id: int):
-    village = Village.query.get(id)
+    village = db.session.query(Village).get(id)
     if not village:
         raise APIError("Village not found", code="NOT_FOUND", status_code=404)
     db.session.delete(village)
     db.session.commit()
-    return True
+    return village
