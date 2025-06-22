@@ -13,7 +13,6 @@ root_path = Path(__file__).parents[1]
 schema_path = root_path / "schemas"
 type_defs = load_schema_from_path(schema_path)
 
-# mutation = MutationType()
 ninja = ObjectType("Ninja")
 village = ObjectType("Village")
 
