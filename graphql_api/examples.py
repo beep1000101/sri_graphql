@@ -4,10 +4,11 @@ from flask import Blueprint, render_template_string
 
 # explorer_html = ExplorerGraphiQL().html(None)
 
-examples_blueprint = Blueprint('graphql_examples', __name__)
+examples_blueprint = Blueprint(
+    'graphql-examples', __name__, url_prefix='/graphql-examples')
 
 
-@examples_blueprint.route("/graphql-examples")
+@examples_blueprint.route("")
 def graphql_examples():
     base_path = Path("testing/graphql_queries")
     snippets = {}

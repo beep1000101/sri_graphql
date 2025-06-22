@@ -29,12 +29,15 @@ def resolve_create_ninja(
     if not village:
         raise APIError("Village not found", code="NOT_FOUND", status_code=404)
 
+    ninja_rank = NinjaRank(rank)
+    ninja_kekkei_genkai = KekkeiGenkai(kekkei_genkai)
+
     ninja = Ninja(
         name=name,
         nickname=nickname,
         age=age,
-        rank=rank,
-        kekkei_genkai=kekkei_genkai,
+        rank=ninja_rank,
+        kekkei_genkai=ninja_kekkei_genkai,
         is_cool=is_cool,
         village_id=village_id
     )
@@ -51,6 +54,12 @@ def resolve_update_ninja(_, info, id: int, **kwargs):
     ninja = db.session.query(Ninja).get(id)
     if ninja is None:
         raise APIError("Ninja not found", code="NOT_FOUND", status_code=404)
+
+    if "rank" in kwargs:
+        kwargs["rank"] = NinjaRank(kwargs["rank"])
+
+    if "kekkei_genkai" in kwargs:
+        kwargs["kekkei_genkai"] = KekkeiGenkai(kwargs["kekkei_genkai"])
 
     for field in ["name", "age", "village_id", "rank", "kekkei_genkai", "is_cool", "nickname"]:
         if field in kwargs and kwargs[field] is not None:

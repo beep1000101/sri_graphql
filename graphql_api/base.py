@@ -8,15 +8,16 @@ from graphql_api.errors.utils import determine_http_status
 
 explorer_html = ExplorerGraphiQL().html(None)
 
-graphql_base_blueprint = Blueprint('graphql_base', __name__)
+graphql_base_blueprint = Blueprint(
+    'graphql_base', __name__, url_prefix='/graphql')
 
 
-@graphql_base_blueprint.get("/graphql")
+@graphql_base_blueprint.get("")
 def graphql_playground():
     return explorer_html, 200
 
 
-@graphql_base_blueprint.post("/graphql")
+@graphql_base_blueprint.post("")
 def graphql_server():
     data = request.get_json()
     success, result = graphql_sync(
