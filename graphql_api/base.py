@@ -4,6 +4,7 @@ from ariadne import graphql_sync
 from ariadne.explorer import ExplorerGraphiQL
 
 from graphql_api.graphql_schema import schema
+from graphql_api.errors.utils import determine_http_status
 
 explorer_html = ExplorerGraphiQL().html(None)
 
@@ -24,4 +25,9 @@ def graphql_server():
         context_value=request,
         debug=True
     )
+
+    if result.get('errors'):
+        status_code = determine_http_status(result)
+        return jsonify(result), status_code
+
     return jsonify(result)
