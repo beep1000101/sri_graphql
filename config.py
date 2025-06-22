@@ -24,8 +24,8 @@ class BaseConfig:
     SECRET_KEY = os.getenv('SECRET_KEY', 'change-me')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JSON_SORT_KEYS = False
-    host = os.getenv('FLASK_HOST', '0.0.0.0')
-    port = int(os.getenv('FLASK_PORT', 5000))
+    HOST = os.getenv('FLASK_HOST', '0.0.0.0')
+    PORT = int(os.getenv('FLASK_PORT', 5000))
 
 
 class DevelopmentConfig(BaseConfig):

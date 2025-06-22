@@ -10,9 +10,11 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy project files
 COPY . .
+# RUN chmod -R a+rX /app
 
 # Expose port (adjust if needed)
 EXPOSE 5000
 
 # run flask app
-CMD ["flask", "--app", "app", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0"]
+

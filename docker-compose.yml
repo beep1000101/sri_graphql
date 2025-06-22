@@ -1,10 +1,10 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: sri_graphql_app
     ports:
       - "5000:5000"
-    volumes:
-      - .:/app
     environment:
       - ${FLASK_ENV}
