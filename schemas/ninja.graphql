@@ -18,12 +18,12 @@ extend type Query {
 type Mutation {
     createNinja(
         name: String!
-        nickname: String
         age: Int!
+        village_id: ID!
         rank: String!
         kekkei_genkai: String!
         is_cool: Boolean!
-        village_id: ID!
+        nickname: String
     ): Ninja!
 
     updateNinja(

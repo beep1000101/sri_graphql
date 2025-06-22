@@ -33,5 +33,5 @@ def resolve_villages(_, info):
 
 
 @village.field("ninjas")
-def resolve_village_ninjas(obj: Village, info):
+def resolve_village_ninjas(obj, info):
     return obj.ninjas

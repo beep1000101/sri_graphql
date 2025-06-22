@@ -25,5 +25,10 @@ extend type Mutation {
         population: Int
     ): Village!
 
+    assignNinjaToVillage(
+        villageId: ID!
+        ninjaId: ID!
+    ): Village!
+
     deleteVillage(id: ID!): Village!
 }
