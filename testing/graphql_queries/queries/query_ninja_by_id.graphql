@@ -1,21 +1,4 @@
 query {
-  ninjas {
-    id
-    name
-    nickname
-    age
-    rank
-    kekkei_genkai
-    is_cool
-    village_id
-    village {
-      id
-      name
-    }
-  }
-}
-
-query {
   ninja(id: 1) {
     id
     name

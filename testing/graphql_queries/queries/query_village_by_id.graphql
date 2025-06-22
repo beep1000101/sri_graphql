@@ -1,0 +1,12 @@
+query {
+  village(id: 1) {
+    id
+    name
+    leader_name
+    population
+    ninjas {
+      id
+      name
+    }
+  }
+}

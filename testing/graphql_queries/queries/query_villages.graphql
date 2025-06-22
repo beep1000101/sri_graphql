@@ -1,0 +1,15 @@
+query {
+  villages {
+    id
+    name
+    leader_name
+    population
+    ninjas {
+      id
+      name
+      age
+      rank
+      is_cool
+    }
+  }
+}
